@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
         body: Tawk(
-          directChatLink: 'YOUR_DIRECT_URL',
+          directChatLink: '',
           visitor: TawkVisitor(
             name: 'Ayoub AMINE',
             email: 'ayoubamine2a@gmail.com',

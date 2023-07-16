@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
@@ -94,6 +96,8 @@ class _TawkState extends State<Tawk> {
     return Stack(
       children: [
         InAppWebView(
+          gestureRecognizers: {}..add(Factory<VerticalDragGestureRecognizer>(
+              () => VerticalDragGestureRecognizer())),
           initialUrlRequest:
               URLRequest(url: Uri.tryParse(widget.directChatLink)),
           onWebViewCreated: (webViewController) {
