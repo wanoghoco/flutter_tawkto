@@ -1,6 +1,6 @@
 name: flutter_tawkto
 description: Tawk widget for Flutter.
-version: 0.0.2
+version: 0.0.4
 homepage: https://github.com/wanoghoco/flutter_tawkto
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_inappwebview: ^5.7.2+3
+  flutter_inappwebview: ^6.1.5
   
   #webview_flutter: ^3.0.1
 
